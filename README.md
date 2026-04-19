@@ -22,3 +22,20 @@ Download the pre-trained CoBEVT models (`cobevt` and `cobevt_static`) from the o
 ## Running the Experiments
 ```bash
 python run_inference.py
+```
+Code Structure
+
+    run_inference.py: Main script to run the full pruning pipeline.
+    opencood/tools/inference_camera.py: Modified inference script with L1 pruning, random pruning ablation, and metric calculation.
+
+## Citation
+
+If you use this code for your research, please cite the original CoBEVT paper:
+
+```bibtex
+@inproceedings{li2022cobevt,
+  title={CoBEVT: Cooperative Bird's Eye View Semantic Segmentation with Sparse Transformers},
+  author={Li, Runsheng and Chen, Quan and Li, Xiangyu and Wang, Sijie},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2022}
+}
